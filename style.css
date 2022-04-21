@@ -102,6 +102,7 @@ body {
 
 .share-box img {
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 .share-text {
