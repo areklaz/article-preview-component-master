@@ -29,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-.card-img{
+.card-img {
     width: 100%;
     height: 200px;
     background-image: url('./images/drawers.jpg');
@@ -100,7 +100,7 @@ body {
     background-color: hsl(217, 19%, 35%);
 }
 
-.share-box img{
+.share-box img {
     margin: 0 1rem;
 }
 
@@ -116,5 +116,53 @@ body {
 }
 
 @media (min-width: 1024px) {
-    
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 730px;
+        height: 280px;
+        overflow: visible;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+        background-position: 0 0;
+    }
+
+    .card-main {
+        position: relative;
+        padding: 3rem 4rem;
+    }
+
+    .card-header {
+        font-size: 2rem;
+    }
+
+    .author {
+        padding-top: 2rem;
+    }
+
+    .share-box {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 94px;
+        left: 277px;
+        height: 50px;
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px hsl(217, 12%, 72%);
+    }
+
+    .share-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: -10px;
+        background-color: hsl(217, 19%, 35%);
+        transform: rotate(45deg);
+    }
 }
